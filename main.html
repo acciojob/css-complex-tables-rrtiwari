@@ -7,12 +7,13 @@
     table {
         width: 100%;
         border-collapse: collapse;
+        border: 1px solid orange;
     }
 
     th, td {
         border-style: solid;
         border-color: orange;
-        border-width: 0 0 1px 1px;
+        border-width: 0 0 1px 1px; 
         padding: 3px 5px;
         text-align: center;
     }
@@ -46,7 +47,7 @@
 <tr>
     <td rowspan="11">XYZ</td>
     <td rowspan="5">CST</td>
-    <td rowspan="4">CT</td>
+    <td rowspan="3">CT</td>
     <td>ADS</td>
     <td>1</td>
     <td>10</td>
@@ -62,6 +63,7 @@
     <td>30</td>
 </tr>
 <tr>
+    <td rowspan="2">OT</td>
     <td>VCT</td>
     <td>4</td>
     <td>40</td>
@@ -70,6 +72,12 @@
     <td>ADS</td>
     <td>5</td>
     <td>50</td>
+</tr>
+
+<tr class="sub-total-row">
+    <td class="sub-total-text" colspan="3">Sub Total</td>
+    <td>6</td>
+    <td>15</td>
 </tr>
 
 <tr>
@@ -94,20 +102,17 @@
 <tr>
     <td rowspan="2">FIN</td>
     <td>ACC</td>
+    <td></td>
     <td>2</td>
     <td>20</td>
 </tr>
 <tr>
     <td>TAX</td>
+    <td></td>
     <td>1</td>
     <td>10</td>
 </tr>
 
-<tr class="sub-total-row">
-    <td class="sub-total-text" colspan="3">Sub Total</td>
-    <td>6</td>
-    <td>15</td>
-</tr>
 </tbody>
 </table>
 
